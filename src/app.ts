@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
 
-app.use("api/v1", router);
+app.use("api/", router);
 
 app.get('/', (req, res) => {
     res.send("server is running")
